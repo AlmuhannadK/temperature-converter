@@ -2,16 +2,20 @@
 {
     public static void Main(string[] args)
     {
-        Console.WriteLine("Enter a temperature and its unit (C or F):");
+        while (true)
+        {
 
-        string? input = Console.ReadLine();
+            Console.WriteLine("Enter a temperature and its unit (C or F):");
 
-        string[] inputArr = input.Split(" ");
-        double temperature = double.Parse(inputArr[0]);
-        string unit = inputArr[1];
-        string output = TempConvert(temperature, unit);
+            string? input = Console.ReadLine();
 
-        Console.WriteLine($"Converted: {input} = {output}");
+            string[] inputArr = input.Split(" ");
+            double temperature = double.Parse(inputArr[0]);
+            string unit = inputArr[1];
+            string output = TempConvert(temperature, unit);
+
+            Console.WriteLine($"Converted: {input} = {output}");
+        }
 
     }
 
