@@ -1,21 +1,19 @@
-﻿
-Console.WriteLine("Enter a temperature and its unit (C or F):");
-
-
-int temperature = int.Parse(Console.ReadLine());
-Console.WriteLine(temperature);
-
-class TemperatureConverter
+﻿ class Program
 {
-    public string TempConvert(int temperature, string unit) 
+    public static void Main(string[] args)
     {
-        if(unit.ToUpper() == "F") {
-            float result = ((temperature - 32) * 5/9);
-            return result + "C";
-        } else {
-            float result = (temperature * 9/5) + 32;
-            return result + "F";
+        string TempConvert(int temperature, string unit) 
+        {
+            if(unit.ToUpper() == "F") {
+                double result = ((temperature - 32) * 5/9);
+                    return (result + " C"); 
+            } else {
+                double result = ((temperature * 9/5) + 32);
+                return (result + " F"); 
+            }
         }
-    }
 
+        string result = TempConvert(100, "c");
+        Console.WriteLine(result);
+    }
 }
