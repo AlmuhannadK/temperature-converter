@@ -5,10 +5,13 @@
         while (true)
         {
 
+
             Console.WriteLine("Enter a temperature and its unit (C or F):");
-
             string? input = Console.ReadLine();
-
+            if (input == "quit")
+            {
+                break;
+            }
             string[] inputArr = input.Split(" ");
             double temperature = double.Parse(inputArr[0]);
             string unit = inputArr[1];
