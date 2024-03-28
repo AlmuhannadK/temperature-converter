@@ -55,7 +55,3 @@ Program terminated.
 ## Screenshots of your output
 
 You should run your application and attach the screenshot image of your output (terminal) here.
-
-## Deadline
-
-Tuesday 19th END OF THE DAY
